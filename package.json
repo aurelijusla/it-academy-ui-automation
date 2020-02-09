@@ -1,0 +1,23 @@
+{
+  "name": "ui-automation",
+  "version": "1.0.0",
+  "description": "Cypress test automation example.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelijusla/it-academy-ui-automation.git"
+  },
+  "author": "Aurelijus Lasys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aurelijusla/it-academy-ui-automation/issues"
+  },
+  "homepage": "https://github.com/aurelijusla/it-academy-ui-automation#readme"
+}

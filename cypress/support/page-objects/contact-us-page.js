@@ -1,3 +1,5 @@
+/// <reference types='Cypress' />
+
 import { Page } from './page'
 
 export class ContactUsPage extends Page {
@@ -19,19 +21,19 @@ export class ContactUsPage extends Page {
 
     // 2nd way
     selectSubjectHeading(subjectHeading) {
-        return cy.get("#id_contact").select(`${subjectHeading}`)
+        return cy.get('#id_contact').select(`${subjectHeading}`)
     }
 
     insertEmailAddress(emailAddress) {
-        return cy.get("#email").type(emailAddress)
+        return cy.get('#email').type(emailAddress)
     }
 
     insertOrderId(orderId) {
-        return cy.get("#id_order").type(orderId)
+        return cy.get('#id_order').type(orderId)
     }
 
     insertMessage(message) {
-        return cy.get("textarea").type(message)
+        return cy.get('textarea').type(message)
     }
 
     // Let's say we can reuse this element in other pages

@@ -1,9 +1,9 @@
-/// <reference types="Cypress" />
+/// <reference types='Cypress' />
 
-import { ContactUsPage } from '../support/page-objects/contact-us-page'
-import { TestData } from '../support/test-data/test-data'
+import { ContactUsPage } from '../support/page-objects/contact-us-page';
+import { TestData } from '../support/test-data/test-data';
 
-describe('Basic actions', () => {
+describe('Page object pattern', () => {
     let contactUsPage = new ContactUsPage();
     let testData = new TestData();
 
@@ -11,7 +11,7 @@ describe('Basic actions', () => {
         cy.visit('/index.php?controller=contact')
     })
 
-    it('should select first item in dropdown', () => {
+    it('should send a customer service message', () => {
         contactUsPage.selectSubjectHeading('Customer service');
         contactUsPage.insertEmailAddress(testData.emailAddress);
         contactUsPage.insertOrderId(testData.orderId);

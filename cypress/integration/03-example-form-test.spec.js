@@ -3,7 +3,7 @@
 describe('Example form test', () => {
     beforeEach(() => {
         cy.visit('/index.php?controller=contact');
-    })
+    });
 
     it('should send a customer service message', () => {
         cy.get("#id_contact").select('Customer service');
@@ -12,5 +12,5 @@ describe('Example form test', () => {
         cy.get("textarea").type('Hello, I am an alien');
         cy.contains("Send").click();
         cy.get('.alert-success').should('be.visible');
-    })
-})
+    });
+});

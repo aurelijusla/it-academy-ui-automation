@@ -10,7 +10,7 @@ describe('Page object pattern', () => {
     beforeEach(() => {
         cy.visit('/index.php?controller=contact');
         cy.viewport('iphone-xr', 'landscape');
-    })
+    });
 
     it('should send a customer service message', () => {
         contactUsPage.selectSubjectHeading('Customer service');

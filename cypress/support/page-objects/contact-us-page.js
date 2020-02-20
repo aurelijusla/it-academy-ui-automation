@@ -20,6 +20,11 @@ export class ContactUsPage extends Page {
     */
 
     // 2nd way
+
+    goToPage() {
+        cy.visit('/index.php?controller=contact');
+    }
+
     selectSubjectHeading(subjectHeading) {
         return cy.get('#id_contact').select(`${subjectHeading}`)
     }

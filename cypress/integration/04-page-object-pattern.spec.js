@@ -8,8 +8,8 @@ describe('Page object pattern', () => {
     let testData = new TestData();
 
     beforeEach(() => {
-        cy.visit('/index.php?controller=contact')
-    })
+        cy.visit('/index.php?controller=contact');
+    });
 
     it('should send a customer service message', () => {
         contactUsPage.selectSubjectHeading('Customer service');
@@ -17,6 +17,6 @@ describe('Page object pattern', () => {
         contactUsPage.insertOrderId(testData.orderId);
         contactUsPage.insertMessage(testData.message);
         contactUsPage.clickSend();
-        contactUsPage.alertSuccess.should('be.visible')
+        contactUsPage.alertSuccess.should('be.visible');
     })
 })
